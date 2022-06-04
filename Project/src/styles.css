@@ -1,0 +1,311 @@
+body {
+   /* background-image: url('../img/background1.jpg'); */
+   background-image: url('../img/bg4_2.png');
+
+   background-position: 0 0;
+   background-repeat: repeat;
+   background-size: 35% auto;
+   width: 100%;
+   height: 100%;
+
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.container {
+   padding: 30px 0;
+   flex: 1 1 auto;
+}
+
+
+
+
+/* -------BUTTON-------------- */
+.height {
+   height: 60px;
+}
+
+.search {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+
+}
+
+.form-control {
+   height: 50px;
+   text-indent: 25px;
+   font-style: italic;
+   /* border: 2px solid #83a8e7; */
+   background-color: rgba(255, 255, 255, .8);
+}
+
+.form-control:focus {
+   box-shadow: none;
+   border: 2px solid #41567b;
+   background-color: rgba(255, 255, 255, .9);
+}
+
+.search .fa-search {
+   position: absolute;
+   top: 18px;
+   left: 12px;
+   color: #405579bd;
+}
+
+.search .btn-primary {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   height: 40px;
+   width: 90px;
+   background: #41567b;
+   border-color: #41567b;
+
+}
+
+.search .btn-primary:hover {
+   background-color: #344563;
+}
+
+.search .btn-primary:active {
+   background-color: #344563;
+}
+
+.current {
+   height: 50px;
+   width: 90px;
+}
+
+
+
+/* ------------LOCATION------------- */
+.city__container {
+   display: block;
+   margin: 40px auto 20px;
+}
+
+
+.city__content {
+   display: flex;
+   justify-content: center;
+}
+
+.geo__icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.geo__icon img {
+   width: 30px;
+   height: auto;
+   position: absolute;
+   top: 4px;
+   left: -15px;
+}
+
+.location {
+   color: white;
+   font-size: 48px;
+   font-weight: 600;
+   padding-left: 40px;
+}
+
+/* ----------DATE-------------- */
+.current__date {
+   text-align: center;
+   color: white;
+   font-size: 36px;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+.current-time {
+   text-align: center;
+   color: white;
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+/* -------------TEMPERATURE-------------- */
+
+.units a {
+   padding-left: 10px;
+   font-size: 34px;
+   font-weight: bold;
+   text-decoration: none;
+   color: white;
+   vertical-align: top;
+}
+
+.temperature__container {
+   display: block;
+   margin: 20px auto;
+}
+
+.temperature__content {
+   display: flex;
+   justify-content: center;
+
+}
+
+.temperature__icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.temperature__icon img {
+   width: 100px;
+   height: auto;
+}
+
+.current__temperature_day {
+
+   text-align: center;
+   color: white;
+   font-size: 88px;
+   font-weight: 600;
+   padding-left: 40px;
+   float: left;
+   line-height: 90px;
+   height: 90px;
+
+}
+
+.current__temperature_night {
+
+   text-align: center;
+   color: white;
+   font-size: 60px;
+   font-weight: 400;
+   padding-left: 20px;
+   float: left;
+   line-height: 110px;
+   height: 90px;
+}
+
+.temperature-description {
+   text-align: center;
+   color: white;
+   font-size: 34px;
+   font-weight: 400;
+}
+
+/* --------------WEATHER CARDS------------------ */
+
+
+.card {
+   background-color: rgba(0, 0, 0, .5);
+   color: white;
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
+
+.card-img-top {
+   width: auto;
+   height: 50px;
+}
+
+._2,
+._3,
+   {
+   width: auto;
+   height: 40px;
+}
+
+._5 {
+   width: auto;
+   height: 37px;
+}
+
+.card__top {
+   display: flex;
+}
+
+.card-text {
+   color: white;
+}
+
+.day {
+   padding-left: 20px;
+   font-size: 48px;
+   font-weight: 600;
+   height: 60px;
+   line-height: 60px;
+}
+
+.night {
+   padding-left: 15px;
+   font-size: 32px;
+   font-weight: 400;
+   height: 60px;
+   line-height: 70px;
+
+}
+
+
+.date {
+   margin: 10px 0;
+   font-size: 18px;
+   text-align: center;
+   font-weight: 300;
+   opacity: 80%;
+}
+
+.weather {
+   font-size: 24px;
+   text-align: center;
+   font-weight: 500;
+}
+
+.details__wind,
+.details__humidity {
+   display: flex;
+}
+
+.details__wind-icon {
+   width: 70px;
+   height: 30px;
+}
+
+.details__wind-icon img {
+   width: 50%;
+   display: block;
+   margin: 0 auto;
+}
+
+
+
+.details__humidity-icon {
+   width: 70px;
+   height: 30px;
+
+}
+
+.details__humidity-icon img {
+   width: 20%;
+   display: block;
+   margin: 0 auto;
+}
+
+.details__humidity-text,
+.details__wind-text {
+   margin: 0 0;
+   font-size: 16px;
+
+   font-weight: 400;
+   font-style: italic;
+}
